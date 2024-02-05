@@ -1,0 +1,10 @@
+// Importing global files
+@import "./global/variables";
+@import "./global/base";
+@import "./global/reset";
+
+// Importing components
+@import "./components/header";
+@import "./components/main";
+@import "./components/footer";
+@import "./components/pages/galery"

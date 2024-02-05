@@ -1,0 +1,53 @@
+@import "../global/variables";
+
+.footer {
+  position: relative;
+  width: 100vw;
+  min-height: 70vh;
+  background-color: $eerie-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px groove black;
+  text-align: center;
+
+  .footer-title {
+    font-size: 4vw;
+    margin: 0 0 20px 0;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.464);
+  }
+
+  .footer-infos-01, .footer-infos-02 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+
+    .info {
+        width: 30%;
+        gap: 10px;
+    }
+
+    .info-title {
+        color: $davis-gray-2;
+    }
+
+    .info-text {
+        color: $davis-gray-2;
+        text-decoration: none;
+    }
+  }
+
+  .footer-credits {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+
+    .credits-text {
+        color: $davis-gray-2;
+    }
+  }
+}
