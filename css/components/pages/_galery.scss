@@ -16,22 +16,45 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    .s01-div-image {
-      width: calc(30% - 20px); // Ajuste aqui para garantir 3 imagens por linha
-      margin: 10px;
-      height: 60vh;
-      overflow: hidden;
-      transition: .3s;
-
-      .div-image {
+    .s01-title {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+        color: $platinum;
+        text-align: center;
+        margin: 20px;
+        font-size: 2vw;
     }
 
-    .s01-div-image:hover {
+    strong {
+        font-weight: 400;
+    }
+
+    .s01-div {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .s01-div-image {
+        width: calc(
+          30% - 20px
+        ); // Ajuste aqui para garantir 3 imagens por linha
+        margin: 10px;
+        height: 60vh;
+        overflow: hidden;
+        transition: 0.3s;
+
+        .div-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .s01-div-image:hover {
         width: calc(40% - 20px);
+      }
     }
   }
 }
