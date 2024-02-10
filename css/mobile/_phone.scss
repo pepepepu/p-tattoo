@@ -49,11 +49,12 @@
 
       .section-02-div {
         height: 60%;
+        width: 85%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
-        gap: 1vh;
+        gap: .6vh;
 
         .s02-div-image {
           justify-self: center;
