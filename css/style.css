@@ -313,15 +313,17 @@ table {
 }
 
 .footer {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 70vh;
   width: 100vw;
-  background-color: #171717;
+  background: linear-gradient(to bottom, #1c1c1b, #1f1f1e, #222221);
 }
 .footer .footer-title {
+  color: #595958;
   font-size: 4vw;
   margin: 0 0 20px 0;
   text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.464);
@@ -340,17 +342,16 @@ table {
   gap: 10px;
 }
 .footer .footer-infos-01 .info-title, .footer .footer-infos-02 .info-title {
-  color: #595958;
+  color: #d2d2d2;
 }
 .footer .footer-infos-01 .info-text, .footer .footer-infos-02 .info-text {
-  color: #595958;
+  color: #d2d2d2;
   text-decoration: none;
 }
 .footer .footer-credits {
-  margin-bottom: 15px;
-}
-.footer .footer-credits .credits-text {
-  color: #595958;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5vh;
 }
 
 .galery {
@@ -520,12 +521,12 @@ table {
   }
   .footer {
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     justify-content: center;
   }
   .footer .footer-title {
-    font-size: 8vw;
-    margin: 4vw;
+    font-size: 12vw;
+    margin: 1vw;
   }
   .footer .footer-infos-01 {
     justify-self: center;
@@ -558,8 +559,10 @@ table {
   .footer .footer-infos-02 .info-title,
   .footer .footer-infos-02 .info-text {
     font-size: 3vw;
+    text-decoration: none;
   }
   .footer .footer-credits {
-    display: none;
+    position: relative;
+    margin: 2vh;
   }
 }/*# sourceMappingURL=style.css.map */
