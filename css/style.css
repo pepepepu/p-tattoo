@@ -404,7 +404,7 @@ table {
   width: calc(35% - 20px);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 550px) {
   .header {
     height: 10vh;
     width: 100vw;
@@ -587,7 +587,7 @@ table {
     margin: 2vh;
   }
 }
-@media screen and (min-width: 701px) and (max-width: 1250px) {
+@media screen and (min-width: 551px) and (max-width: 1250px) {
   .header {
     height: 15vh;
     width: 100vw;
