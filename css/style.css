@@ -404,7 +404,7 @@ table {
   width: calc(35% - 20px);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700) {
   .header {
     height: 10vh;
     width: 100vw;
@@ -449,6 +449,11 @@ table {
     gap: 0.6vh;
   }
   .main .main-section-02 .section-02-div .s02-div-image {
+    justify-self: center;
+    width: 18vw;
+    height: 18vw;
+  }
+  .main .main-section-02 .section-02-div .s02-div-image:hover {
     justify-self: center;
     width: 18vw;
     height: 18vw;
@@ -532,9 +537,12 @@ table {
     height: 30%;
     margin: 8px;
   }
+  .galery .galery-section-01 .s01-div .s01-div-image:hover {
+    width: 80%;
+  }
   .footer {
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
     justify-content: center;
   }
   .footer .footer-title {
@@ -577,5 +585,129 @@ table {
   .footer .footer-credits {
     position: relative;
     margin: 2vh;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1250px) {
+  .header {
+    height: 15vh;
+    width: 100vw;
+  }
+  .header .header-nav {
+    width: 60%;
+  }
+  .header .header-nav .header-a {
+    font-size: 2.5vw;
+  }
+  .header .header-div {
+    width: 40%;
+    height: 30%;
+  }
+  .main .main-section-01 {
+    margin-top: 10vh;
+    height: 50vh;
+  }
+  .main .main-section-01 .s01-div .section-01-title {
+    font-size: 14vw;
+  }
+  .main .main-section-01 .s01-div .section-01-description {
+    font-size: 2.5vw;
+  }
+  .main .main-section-02 {
+    gap: 3vh;
+    height: 40vh;
+  }
+  .main .main-section-02 .section-02-title {
+    font-size: 3.4vw;
+  }
+  .main .main-section-02 .section-02-div {
+    height: 60%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    gap: 0.6vh;
+  }
+  .main .main-section-02 .section-02-div .s02-div-image {
+    justify-self: center;
+    width: 14vw;
+    height: 14vw;
+  }
+  .main .main-section-02 .section-02-div .s02-div-image:hover {
+    justify-self: center;
+    width: 14vw;
+    height: 14vw;
+  }
+  .main .main-section-03 {
+    flex-direction: column-reverse;
+    gap: 2vh;
+    height: 40vh;
+  }
+  .main .main-section-03 .section-03-div-1 {
+    width: 80%;
+    text-align: center;
+    margin-right: 0px;
+    gap: 1vh;
+  }
+  .main .main-section-03 .section-03-div-1 .s03-div-1-title {
+    color: #e0e0e0;
+    font-size: 4vw;
+  }
+  .main .main-section-03 .section-03-div-1 .s03-div-1-description {
+    font-style: italic;
+    color: #fcfcfc;
+    font-size: 1.5vw;
+  }
+  .main .main-section-03 .section-03-div-2 {
+    width: 20vw;
+    height: 20vw;
+  }
+  .main .main-section-04 {
+    height: 50vh;
+    flex-direction: column;
+  }
+  .main .main-section-04 .section-04-div-1,
+  .main .main-section-04 .section-04-div-2 {
+    height: 40%;
+    width: 80%;
+    gap: 1.2vw;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-div1-title,
+  .main .main-section-04 .section-04-div-1 .s04-div2-title,
+  .main .main-section-04 .section-04-div-2 .s04-div1-title,
+  .main .main-section-04 .section-04-div-2 .s04-div2-title {
+    font-size: 4vw;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-div1-text,
+  .main .main-section-04 .section-04-div-1 .s04-div2-text,
+  .main .main-section-04 .section-04-div-2 .s04-div1-text,
+  .main .main-section-04 .section-04-div-2 .s04-div2-text {
+    font-size: 2.5vw;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-d1-div-buttons,
+  .main .main-section-04 .section-04-div-2 .s04-d1-div-buttons {
+    flex-direction: row;
+    height: auto;
+    margin: 5px;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button,
+  .main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .div-button {
+    padding: 6px 10px;
+    font-size: 2vw;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button .button-icon,
+  .main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .div-button .button-icon {
+    width: 4vw;
+  }
+  .main .main-section-04 .section-04-div-1 .d2-div-image,
+  .main .main-section-04 .section-04-div-2 .d2-div-image {
+    width: 80%;
+    height: 40%;
+    margin: 5px;
+  }
+  .footer {
+    width: 100vw;
+    height: 30vh;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */

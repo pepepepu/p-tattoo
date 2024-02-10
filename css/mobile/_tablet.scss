@@ -1,0 +1,145 @@
+@media screen and (min-width: 700px) and (max-width: 1250px){
+  .header {
+    height: 15vh;
+    width: 100vw;
+
+    .header-nav {
+      width: 60%;
+
+      .header-a {
+        font-size: 2.5vw;
+      }
+    }
+
+    .header-div {
+      width: 40%;
+      height: 30%;
+    }
+  }
+
+  .main {
+    .main-section-01 {
+      margin-top: 10vh;
+      height: 50vh;
+
+      .s01-div {
+        .section-01-title {
+          font-size: 14vw;
+        }
+
+        .section-01-description {
+          font-size: 2.5vw;
+        }
+      }
+    }
+
+    .main-section-02 {
+      gap: 3vh;
+      height: 40vh;
+
+      .section-02-title {
+        font-size: 3.4vw;
+      }
+
+      .section-02-div {
+        height: 60%;
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        gap: 0.6vh;
+
+        .s02-div-image {
+          justify-self: center;
+          width: 14vw;
+          height: 14vw;
+        }
+
+        .s02-div-image:hover {
+          justify-self: center;
+          width: 14vw;
+          height: 14vw;
+        }
+      }
+    }
+
+    .main-section-03 {
+      flex-direction: column-reverse;
+      gap: 2vh;
+      height: 40vh;
+
+      .section-03-div-1 {
+        width: 80%;
+        text-align: center;
+        margin-right: 0px;
+        gap: 1vh;
+
+        .s03-div-1-title {
+          color: $platinum;
+          font-size: 4vw;
+        }
+
+        .s03-div-1-description {
+          font-style: italic;
+          color: $anti-flash-2;
+          font-size: 1.5vw;
+        }
+      }
+
+      .section-03-div-2 {
+        width: 20vw;
+        height: 20vw;
+      }
+    }
+
+    .main-section-04 {
+      height: 50vh;
+      flex-direction: column;
+
+      .section-04-div-1,
+      .section-04-div-2 {
+        height: 40%;
+        width: 80%;
+        gap: 1.2vw;
+
+        .s04-div1-title,
+        .s04-div2-title {
+          font-size: 4vw;
+        }
+
+        .s04-div1-text,
+        .s04-div2-text {
+          font-size: 2.5vw;
+        }
+
+        .s04-d1-div-buttons {
+          flex-direction: row;
+          height: auto;
+          margin: 5px;
+
+          .div-button {
+            padding: 6px 10px;
+            font-size: 2vw;
+
+            .button-icon {
+              width: 4vw;
+            }
+          }
+        }
+
+        .d2-div-image {
+          width: 80%;
+          height: 40%;
+          margin: 5px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    width: 100vw;
+    height: 30vh;
+    justify-content: center;
+  }
+}
