@@ -601,6 +601,13 @@ table {
   .header .header-div {
     width: 40%;
     height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .header .header-div .header-button {
+    font-size: 1.4vw;
+    width: 90%;
   }
   .main .main-section-01 {
     margin-top: 10vh;
