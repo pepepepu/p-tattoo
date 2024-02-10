@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
-  width: 100vw;
-  height: 100vh;
   background-color: #171717;
   font-family: "Space Mono", monospace;
-  box-sizing: border-box;
   overflow-x: hidden;
 }
 
@@ -75,6 +72,7 @@ table {
   width: 60%;
 }
 .header .header-nav .header-a {
+  font-size: 1.1vw;
   text-decoration: none;
   color: #eeeeee;
   cursor: pointer;
@@ -126,13 +124,23 @@ table {
   align-items: center;
   justify-content: center;
 }
-.main .main-section-01 .section-01-title {
+.main .main-section-01 .s01-div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.412);
+}
+.main .main-section-01 .s01-div .section-01-title {
   font-size: 7vw;
   color: #eeeeee;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
-.main .main-section-01 .section-01-description {
+.main .main-section-01 .s01-div .section-01-description {
   font-size: 1.2vw;
   color: #eeeeee;
   font-weight: 400;
@@ -147,7 +155,7 @@ table {
   background-color: #fff;
   width: 100vw;
   height: 50vh;
-  gap: 30px;
+  gap: 5vh;
 }
 .main .main-section-02 .section-02-title {
   font-size: 1.8vw;
@@ -164,24 +172,24 @@ table {
   justify-content: space-evenly;
 }
 .main .main-section-02 .section-02-div .s02-div-image {
-  width: 120px;
-  height: 120px;
-  border: 5px groove black;
+  width: 8vw;
+  height: 8vw;
+  border: 0.4vw groove black;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .main .main-section-02 .section-02-div .s02-div-image:hover {
-  width: 150px;
-  height: 150px;
+  width: 10vw;
+  height: 10vw;
 }
 .main .main-section-03 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100vw;
   height: 50vh;
-  gap: 30px;
+  gap: 5vh;
   background-image: url("/assets/bg.png");
   background-size: cover;
   background-position: center;
@@ -190,16 +198,17 @@ table {
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1.5vh;
   margin-right: 10px;
 }
 .main .main-section-03 .section-03-div-1 .s03-div-1-title {
   color: #e0e0e0;
-  font-size: 3vw;
+  font-size: 4vw;
 }
 .main .main-section-03 .section-03-div-1 .s03-div-1-description {
-  color: #e0e0e0;
-  font-size: 1.2vw;
+  font-style: italic;
+  color: #fcfcfc;
+  font-size: 1vw;
 }
 .main .main-section-03 .section-03-div-2 {
   width: 200px;
@@ -222,7 +231,8 @@ table {
   justify-content: space-evenly;
   align-items: center;
 }
-.main .main-section-04 .section-04-div-1 {
+.main .main-section-04 .section-04-div-1,
+.main .main-section-04 .section-04-div-2 {
   height: 70%;
   width: 45%;
   background-color: #e0e0e0;
@@ -235,15 +245,18 @@ table {
   gap: 10px;
   border-radius: 10px;
 }
-.main .main-section-04 .section-04-div-1 .s04-div1-title {
+.main .main-section-04 .section-04-div-1 .s04-div1-title,
+.main .main-section-04 .section-04-div-2 .s04-div1-title {
   font-size: 2vw;
   width: 90%;
 }
-.main .main-section-04 .section-04-div-1 .s04-div1-text {
+.main .main-section-04 .section-04-div-1 .s04-div1-text,
+.main .main-section-04 .section-04-div-2 .s04-div1-text {
   font-size: 1.2vw;
   width: 90%;
 }
-.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons {
+.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons,
+.main .main-section-04 .section-04-div-2 .s04-d1-div-buttons {
   height: 30%;
   display: flex;
   flex-direction: column;
@@ -252,7 +265,8 @@ table {
   gap: 10px;
   margin: 10px;
 }
-.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button {
+.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button,
+.main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .div-button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -264,43 +278,33 @@ table {
   color: #e0e0e0;
   transition: 0.3s;
 }
-.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button .button-icon {
+.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button .button-icon,
+.main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .div-button .button-icon {
   width: 20px;
   margin: 0 6px 0 0;
 }
-.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button:hover {
+.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button:hover,
+.main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .div-button:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.824);
   padding: 10px 14px;
 }
-.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .instagram-button:hover {
+.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .instagram-button:hover,
+.main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .instagram-button:hover {
   background: linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #ffd600);
 }
-.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .whatsapp-button:hover {
+.main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .whatsapp-button:hover,
+.main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .whatsapp-button:hover {
   background: linear-gradient(to right, #075e54, #128c7e, #25d366);
 }
-.main .main-section-04 .section-04-div-2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-  width: 45%;
-  background-color: #e0e0e0;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.824);
-  border-radius: 10px;
-  text-align: center;
-}
-.main .main-section-04 .s04-div2-title {
+.main .main-section-04 .section-04-div-2 .s04-div2-title {
   font-size: 2vw;
   width: 90%;
-  margin-bottom: 10px;
 }
-.main .main-section-04 .s04-div2-text {
+.main .main-section-04 .section-04-div-2 .s04-div2-text {
   font-size: 1.2vw;
   width: 90%;
-  margin-bottom: 10px;
 }
-.main .main-section-04 .d2-div-image {
+.main .main-section-04 .section-04-div-2 .d2-div-image {
   width: 90%;
   height: 50%;
   background-image: url("/assets/studio.png");
@@ -309,16 +313,13 @@ table {
 }
 
 .footer {
-  position: relative;
-  width: 100vw;
-  min-height: 70vh;
-  background-color: #171717;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-top: 5px groove black;
-  text-align: center;
+  height: 70vh;
+  width: 100vw;
+  background-color: #171717;
 }
 .footer .footer-title {
   font-size: 4vw;
@@ -332,6 +333,7 @@ table {
   align-items: center;
   justify-content: center;
   margin: 30px;
+  text-align: center;
 }
 .footer .footer-infos-01 .info, .footer .footer-infos-02 .info {
   width: 30%;
@@ -345,8 +347,6 @@ table {
   text-decoration: none;
 }
 .footer .footer-credits {
-  position: absolute;
-  bottom: 0;
   margin-bottom: 15px;
 }
 .footer .footer-credits .credits-text {
@@ -401,4 +401,165 @@ table {
 }
 .galery .galery-section-01 .s01-div .s01-div-image:hover {
   width: calc(35% - 20px);
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    height: 10vh;
+    width: 100vw;
+  }
+  .header .header-nav {
+    width: 90%;
+  }
+  .header .header-nav .header-a {
+    font-size: 3.3vw;
+  }
+  .header .header-div {
+    display: none;
+    width: 5%;
+  }
+  .header .header-div .header-button {
+    display: none;
+  }
+  .main .main-section-01 {
+    margin-top: 10vh;
+    height: 50vh;
+  }
+  .main .main-section-01 .s01-div .section-01-title {
+    font-size: 14vw;
+  }
+  .main .main-section-01 .s01-div .section-01-description {
+    font-size: 2.5vw;
+  }
+  .main .main-section-02 {
+    gap: 3vh;
+    height: 40vh;
+    gap: 2vh;
+  }
+  .main .main-section-02 .section-02-title {
+    font-size: 5vw;
+  }
+  .main .main-section-02 .section-02-div {
+    height: 55%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .main .main-section-02 .section-02-div .s02-div-image {
+    justify-self: center;
+    width: 20vw;
+    height: 20vw;
+  }
+  .main .main-section-03 {
+    flex-direction: column-reverse;
+    gap: 2vh;
+    height: 40vh;
+  }
+  .main .main-section-03 .section-03-div-1 {
+    width: 80%;
+    text-align: center;
+    margin-right: 0px;
+    gap: 1vh;
+  }
+  .main .main-section-03 .section-03-div-1 .s03-div-1-title {
+    color: #e0e0e0;
+    font-size: 6vw;
+  }
+  .main .main-section-03 .section-03-div-1 .s03-div-1-description {
+    font-style: italic;
+    color: #fcfcfc;
+    font-size: 2vw;
+  }
+  .main .main-section-03 .section-03-div-2 {
+    width: 30vw;
+    height: 30vw;
+  }
+  .main .main-section-04 {
+    height: 50vh;
+    flex-direction: column;
+  }
+  .main .main-section-04 .section-04-div-1,
+  .main .main-section-04 .section-04-div-2 {
+    height: 40%;
+    width: 80%;
+    gap: 1.2vw;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-div1-title,
+  .main .main-section-04 .section-04-div-1 .s04-div2-title,
+  .main .main-section-04 .section-04-div-2 .s04-div1-title,
+  .main .main-section-04 .section-04-div-2 .s04-div2-title {
+    font-size: 4vw;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-div1-text,
+  .main .main-section-04 .section-04-div-1 .s04-div2-text,
+  .main .main-section-04 .section-04-div-2 .s04-div1-text,
+  .main .main-section-04 .section-04-div-2 .s04-div2-text {
+    font-size: 2.5vw;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-d1-div-buttons,
+  .main .main-section-04 .section-04-div-2 .s04-d1-div-buttons {
+    flex-direction: row;
+    height: auto;
+    margin: 5px;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button,
+  .main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .div-button {
+    padding: 6px 10px;
+    font-size: 2vw;
+  }
+  .main .main-section-04 .section-04-div-1 .s04-d1-div-buttons .div-button .button-icon,
+  .main .main-section-04 .section-04-div-2 .s04-d1-div-buttons .div-button .button-icon {
+    width: 4vw;
+  }
+  .main .main-section-04 .section-04-div-1 .d2-div-image,
+  .main .main-section-04 .section-04-div-2 .d2-div-image {
+    width: 80%;
+    height: 40%;
+    margin: 5px;
+  }
+  .footer {
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+  }
+  .footer .footer-title {
+    font-size: 8vw;
+    margin: 4vw;
+  }
+  .footer .footer-infos-01 {
+    justify-self: center;
+    margin: 1vw;
+    flex-direction: column;
+  }
+  .footer .footer-infos-01 .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .footer .footer-infos-01 .info-title,
+  .footer .footer-infos-01 .info-text {
+    font-size: 3vw;
+  }
+  .footer .footer-infos-02 {
+    justify-self: center;
+    margin: 1vw;
+    flex-direction: column;
+  }
+  .footer .footer-infos-02 .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .footer .footer-infos-02 .info-title,
+  .footer .footer-infos-02 .info-text {
+    font-size: 3vw;
+  }
+  .footer .footer-credits {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
