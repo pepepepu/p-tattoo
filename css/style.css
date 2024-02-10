@@ -435,22 +435,22 @@ table {
   .main .main-section-02 {
     gap: 3vh;
     height: 40vh;
-    gap: 2vh;
   }
   .main .main-section-02 .section-02-title {
     font-size: 5vw;
   }
   .main .main-section-02 .section-02-div {
-    height: 55%;
+    height: 60%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-content: center;
+    gap: 1vh;
   }
   .main .main-section-02 .section-02-div .s02-div-image {
     justify-self: center;
-    width: 20vw;
-    height: 20vw;
+    width: 18vw;
+    height: 18vw;
   }
   .main .main-section-03 {
     flex-direction: column-reverse;
