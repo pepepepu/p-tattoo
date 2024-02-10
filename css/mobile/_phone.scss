@@ -54,7 +54,7 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
-        gap: .6vh;
+        gap: 0.6vh;
 
         .s02-div-image {
           justify-self: center;
@@ -137,6 +137,26 @@
     }
   }
 
+  .galery {
+    .galery-section-01 {
+      margin-top: 10vh;
+
+      .s01-title {
+        
+        font-size: 4vw;
+        margin: 15px;
+      }
+
+      .s01-div {
+        .s01-div-image {
+          width: 80%;
+          height: 30%;
+          margin: 8px;
+        }
+      }
+    }
+  }
+
   .footer {
     width: 100vw;
     height: 40vh;
@@ -187,8 +207,8 @@
     }
 
     .footer-credits {
-        position: relative;
-        margin: 2vh;
-      }
+      position: relative;
+      margin: 2vh;
+    }
   }
 }

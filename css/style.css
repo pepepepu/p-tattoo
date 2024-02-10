@@ -520,6 +520,18 @@ table {
     height: 40%;
     margin: 5px;
   }
+  .galery .galery-section-01 {
+    margin-top: 10vh;
+  }
+  .galery .galery-section-01 .s01-title {
+    font-size: 4vw;
+    margin: 15px;
+  }
+  .galery .galery-section-01 .s01-div .s01-div-image {
+    width: 80%;
+    height: 30%;
+    margin: 8px;
+  }
   .footer {
     width: 100vw;
     height: 40vh;
