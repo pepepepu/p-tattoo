@@ -18,9 +18,13 @@ O principal propósito deste projeto é demonstrar minhas habilidades em design 
 
 Na seção "Home", você encontrará uma breve apresentação de Pedro, o Tatuador, com elementos estilizados e organizados para destacar as habilidades de manipulação de elementos HTML, CSS e SASS.
 
+![screenshot](assets/screenshots/home2.png)
+
 ### Galeria
 
 A seção "Galeria" exibe uma coleção de imagens de tatuagens fictícias criadas por Pedro. Cada imagem é cuidadosamente apresentada com detalhes de estilização, demonstrando a versatilidade na construção de layouts.
+
+![screenshot](assets/screenshots/gallery.png)
 
 ## Responsividade
 
