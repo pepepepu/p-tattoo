@@ -1,4 +1,0 @@
-- ver alterações novas: git status
-- adicionar as alterações: git add .
-- fazer um novo commit das alterações: git commit -m "Mensagem"
-- enviar alterações para o git: git push origin main
