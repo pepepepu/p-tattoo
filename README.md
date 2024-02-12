@@ -39,4 +39,4 @@ Sinta-se à vontade para explorar o portfólio e descubra as possibilidades de e
 
 Apreciem a visita!
 
-[Seu Nome] - Desenvolvedor Web
+🅿
