@@ -1,7 +1,7 @@
 # Pedro, o Tatuador - Portfólio
 
 Bem-vindo ao portfólio virtual de Pedro, o Tatuador (personagem fictício), onde eu explorei diversas técnicas de estilização, componentização e manipulação de elementos utilizando HTML, CSS e SASS.
-![Home Screenshot](assets/screenshots/P-Tattoo - Home.png)
+![Home Screenshot](p-tattoo/assets/screenshots/P-Tattoo - Home.png)
 
 ## Tecnologias Utilizadas
 
